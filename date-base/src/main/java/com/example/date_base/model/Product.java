@@ -3,6 +3,8 @@ package com.example.date_base.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "product", schema = "product")
 @Getter
@@ -23,5 +25,7 @@ public class Product {
     @Column(name = "price", nullable = false)
     private Integer price;
 
-
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id")
+    private List<Image> fileImages;
 }
