@@ -6,6 +6,6 @@ public record RequestImageDto(
          Long size,
          String contentType,
          Boolean previewFileImage,
-         byte[] data) {
+         byte[] bytes) {
 
  }

@@ -1,7 +1,7 @@
 package com.example.date_base.dto;
 
+import com.example.date_base.dto.description.response.ResponseDescriptionProductDto;
 import com.example.date_base.dto.image.ResponseImageDto;
-import jdk.jfr.RecordingState;
 
 import java.util.List;
 
@@ -11,5 +11,6 @@ import java.util.List;
 public record ResponseProductDto(
         Long id, String name,
         Integer price,
-        List<ResponseImageDto> fileImages) {
+        List<ResponseImageDto> fileImages,
+        ResponseDescriptionProductDto description) {
 }

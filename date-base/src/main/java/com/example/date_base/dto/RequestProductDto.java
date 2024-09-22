@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * DTO for {@link com.example.date_base.model.Product}
  */
+
+
 public record RequestProductDto(String name,
                                 Integer price,
                                 List<RequestImageDto> fileImages,

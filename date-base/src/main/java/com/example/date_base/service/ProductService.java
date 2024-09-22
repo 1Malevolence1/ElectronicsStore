@@ -1,9 +1,10 @@
 package com.example.date_base.service;
 
 import com.example.date_base.dto.RequestProductDto;
+import com.example.date_base.dto.ResponseProductDto;
 
 public interface ProductService {
 
 
-    void saveNewProduct(RequestProductDto requestDto);
+    ResponseProductDto saveNewProduct(RequestProductDto requestDto);
 }
