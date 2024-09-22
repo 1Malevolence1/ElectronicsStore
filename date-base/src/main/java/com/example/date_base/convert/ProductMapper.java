@@ -5,9 +5,8 @@ import com.example.date_base.dto.RequestProductDto;
 import com.example.date_base.dto.ResponseProductDto;
 import com.example.date_base.model.Product;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
-@Mapper(componentModel = "spring", uses = ImageListMapper.class)
+@Mapper(componentModel = "spring", uses = {ImageListMapper.class, DescriptionProductMapper.class})
 public interface ProductMapper {
 
 

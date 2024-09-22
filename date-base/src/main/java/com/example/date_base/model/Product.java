@@ -25,7 +25,11 @@ public class Product {
     @Column(name = "price", nullable = false)
     private Integer price;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id")
     private List<Image> fileImages;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id")
+    private DescriptionProduct description;
 }
