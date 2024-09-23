@@ -9,7 +9,8 @@ import java.util.List;
  * DTO for {@link com.example.date_base.model.Product}
  */
 public record ResponseProductDto(
-        Long id, String name,
+        Long id,
+        String name,
         Integer price,
         List<ResponseImageDto> fileImages,
         ResponseDescriptionProductDto description) {

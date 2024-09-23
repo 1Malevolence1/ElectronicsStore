@@ -34,4 +34,8 @@ public class Image {
     private String contentType;
 
     private byte[] bytes;
+
+    public Image(Long id) {
+        this.id = id;
+    }
 }

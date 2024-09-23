@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/data-base")
+@RequestMapping(value = "api/data-base")
 @RequiredArgsConstructor
 public class ProductManagerRestController {
 
@@ -18,7 +18,9 @@ public class ProductManagerRestController {
 
     @PostMapping()
     public ResponseEntity<ResponseProductDto> save(@RequestBody RequestProductDto dto){
-        ResponseProductDto productDto = productService.saveNewProduct(dto);
+        productService.saveNewProduct(dto);
         return ResponseEntity.ok(productDto);
     }
+
+
 }

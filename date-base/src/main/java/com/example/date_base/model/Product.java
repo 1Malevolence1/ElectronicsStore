@@ -32,4 +32,7 @@ public class Product {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id")
     private DescriptionProduct description;
+
+
+
 }
