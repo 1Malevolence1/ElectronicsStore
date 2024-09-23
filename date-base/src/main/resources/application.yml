@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: date-base
+
+    datasource:
+            url: jdbc:postgresql://localhost:5433/ElectronicsStore
+            username: postgres
+            password: 1234
+
+
+server:
+    port: 8082
+
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
